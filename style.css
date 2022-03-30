@@ -77,10 +77,16 @@ button:hover{
   margin-bottom: 30px;
 }
 
-.grid{
-  height: 360px;
+.grid {
+  display: grid;
   width: 360px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 360px;
+  background-color: var(--secondary-light);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.grid-element {
+  user-select: none;
 }
 
 .sizeValue{
