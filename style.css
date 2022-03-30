@@ -6,6 +6,8 @@ body{
   flex-direction: column;
 }
 
+/* HEADER */
+  
 header{
   font-family: 'VT323', monospace;
   font-size: 40px;
@@ -14,6 +16,8 @@ header{
   text-align: center;
 }
 
+/* CONTENT */
+
 .content{
   display: flex;
   justify-content: space-around;
@@ -21,6 +25,7 @@ header{
   color: #283234;
   padding: 50px 150px;
   flex-wrap: wrap-reverse;
+  flex-grow: 1;
 }
 
 .left{
@@ -68,4 +73,18 @@ button:hover{
   height: 360px;
   width: 360px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* FOOTER */
+
+a{
+  text-decoration: none;
+  color: #283234;
+}
+
+footer{
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  font-size: 11px;
 }
