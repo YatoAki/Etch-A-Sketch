@@ -20,21 +20,28 @@ header{
 
 .content{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: #283234;
-  padding: 50px 150px;
-  flex-wrap: wrap-reverse;
+  padding: 20px 150px;
   flex-grow: 1;
 }
 
-.left{
+.bottom{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.buttonMiddle,.buttonLeft,.buttonRight{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap:20px;
-  width: 150px;
-  margin: 30px;
+  gap:10px;
+}
+.buttonLeft,.buttonRight{
+  width: 90px;
 }
 
 .size{
@@ -56,23 +63,29 @@ input[type='color'] {
     width: 50px;
     height: 50px;
     border: none;
+    color: #283234;
 }
 
 button:hover{
   transform: scale(1.1);
 }
 
-.right{
+.top{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px;
+  margin-bottom: 30px;
 }
 
 .grid{
   height: 360px;
   width: 360px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sizeValue{
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /* FOOTER */

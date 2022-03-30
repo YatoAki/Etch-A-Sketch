@@ -14,20 +14,26 @@
       ETCH-A-SKETCH
     </header>
     <div class="content">
-      <div class="left">
-        <input type="color" id="colorPicker" value="#000000">
-        <button type="button" name="button" id="color">Color Mode</button>
-        <button type="button" name="button" id="rainbow">Rainbow Mode</button>
-        <button type="button" name="button" id="erase">Eraser Mode</button>
-        <button type="button" name="button" id="clear">Clear</button>
-        <div class="size">
-          <div class="sizeValue">16x16</div>
-          <input type="range" id="sizePicker" value="16" min="1" max="16">
-        </div>
-      </div>
-      <div class="right">
+      <div class="top">
         <div class="grid">
 
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="buttonLeft">
+          <button type="button" name="button" id="color">Color</button>
+          <button type="button" name="button" id="rainbow">Rainbow</button>
+        </div>
+        <div class="buttonMiddle">
+          <input type="color" id="colorPicker" value="#000000">
+          <div class="size">
+            <div class="sizeValue">16x16</div>
+            <input type="range" id="sizePicker" value="16" min="1" max="16">
+          </div>
+        </div>
+        <div class="buttonRight">
+          <button type="button" name="button" id="erase">Eraser</button>
+          <button type="button" name="button" id="clear">Clear</button>
         </div>
       </div>
     </div>
